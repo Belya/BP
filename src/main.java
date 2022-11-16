@@ -38,7 +38,6 @@ public class main {
                         function.change();
                         break;
                     }
-
                     case "5": {
                         function.change();
                         break;

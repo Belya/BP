@@ -80,6 +80,7 @@ public class function {
             }
         }
     }
+
     public  void find(){
         fileGet();
         Scanner sc = new Scanner(System.in);
@@ -101,6 +102,7 @@ public class function {
         }
 
     }
+
     public  void change(){
         fileGet();
 

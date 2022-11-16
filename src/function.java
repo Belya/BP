@@ -80,6 +80,27 @@ public class function {
             }
         }
     }
+    public  void find(){
+        fileGet();
+        Scanner sc = new Scanner(System.in);
+        System.out.println();
+        System.out.println("Поиск по цвету машины");
+        System.out.println();
+        System.out.print("Введите цвет для поиска - ");
+        String change = sc.nextLine();
+        for (int i =0;i<car2.getCarArray().length;i++) {
+            String[] words={};
+            if(car2.getCarArray()[i]!=null)
+            {
+                words = car2.getCarArray()[i].split(";");
+            }
+            if(car2.getCarArray()[i]!=null&& words[2].equals(change))
+            {
+                System.out.println(i+1 + ") "+car2.getCarArray()[i]);
+            }
+        }
+
+    }
     public  void change(){
         fileGet();
 
